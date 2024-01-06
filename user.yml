@@ -14,14 +14,14 @@ services:
   db:
     image: mariadb:latest
     environment:
-      MYSQL_USER: admin
-      MYSQL_DATABASE: school
-      MYSQL_PASSWORD: saboor123
-      MYSQL_ROOT_PASSWORD: saboor123
+      MYSQL_USER: ---
+      MYSQL_DATABASE: ---
+      MYSQL_PASSWORD: ---
+      MYSQL_ROOT_PASSWORD: --
     volumes:
       - db-data:/var/lib/mysql
       - ./Docker/mysql-config.cnf:/etc/mysql/conf.d/config.cnf
       - ./volumes/data/mariadb:/var/lib/mysql
-      - ./blog.sql:/docker-entrypoint-initdb.d/blog.sql
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql
 volumes:
   db-data:
