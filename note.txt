@@ -1,0 +1,15 @@
+backup database: 
+mysqldump -u admin -psaboor123 school > tables.sql
+
+docker container ls // check the container of docker 
+docker exec -it udemy-mvc-db-1 bash // get into the root of the docker 
+docker exec -it udemy-mvc-school-mvc-1 bash // to import database 
+docker exec -i php_for_beginners-db-1 mariadb -u admin -psaboor123 blog < blog.sql
+docker system prune
+
+docker-compose build --no-cache
+
+import tables 
+docker ps 
+pick the container id of database 
+mariadb -u admin -psaboor123 school < tables.sql
