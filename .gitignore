@@ -1,0 +1,4 @@
+# ignore folders
+volumes/ 
+blog.sql
+*.txt
