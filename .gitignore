@@ -1,4 +1,5 @@
 # ignore folders
 volumes/ 
 blog.sql
+docker-compose.yml/
 *.txt
