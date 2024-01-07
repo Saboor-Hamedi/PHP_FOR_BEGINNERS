@@ -1,7 +1,6 @@
 <?php $config = require_once BASE_PATH . '/App/functions/config.php' ?>
 <?php
 
-use Beginners\Database\Database;
 
 ?>
 
@@ -11,7 +10,13 @@ use Beginners\Database\Database;
 
 <main>
   <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-    <h5>Welcome to my home page</h5>
+    <h5>Welcome back to your notes</h5>
+    <?php
+
+    foreach ($results as $note) {
+      echo '<li>' . $note['body'] . '</li>';
+    }
+    ?>
   </div>
 </main>
 

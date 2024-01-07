@@ -5,6 +5,7 @@ $url  = parse_url($_SERVER['REQUEST_URI'])['path'];
 // routes associative array
 $routes = [
   '/' => '../App/controllers/index.php',
+  '/notes' => '../App/controllers/notes.php',
   '/about' => '../App/controllers/about.php',
   '/contact' => '../App/controllers/contact.php',
 ];
