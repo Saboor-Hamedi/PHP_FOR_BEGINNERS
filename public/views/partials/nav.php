@@ -1,3 +1,4 @@
+<?php require_once BASE_PATH . 'App/functions/func.php'; ?>
 <nav class="bg-gray-800">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
@@ -7,9 +8,9 @@
         </div>
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-4">
-            <a href="/" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
-            <a href="/about.php" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Aboud</a>
-            <a href="/contact.php" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+            <a href="/" class="<?php echo urlIs('/') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?>  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+            <a href="/about" class="<?php echo  urlIs('/about') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?>  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+            <a href="/contact" class="<?php echo urlIs('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?>  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
           </div>
         </div>
       </div>

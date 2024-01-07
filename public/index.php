@@ -1,3 +1,2 @@
 <?php
-$heading = 'Home';
-require_once 'views/index.view.php';
+require_once '../App/Router/router.php';
