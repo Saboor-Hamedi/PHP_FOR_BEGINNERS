@@ -1,4 +1,3 @@
-<?php require_once __DIR__ . '/../../../App/functions/bootstrap.php'; ?>
 <!DOCTYPE html>
 <html lang="en" class="h-full bg-gray-100">
 

@@ -3,3 +3,4 @@ volumes/
 blog.sql
 docker-compose.yml
 *.txt
+/vendor/

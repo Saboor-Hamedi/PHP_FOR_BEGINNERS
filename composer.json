@@ -1,0 +1,12 @@
+{
+    "name": "saboor/php_for_beginners",
+    "description": "Saboor/Beginners",
+    "type": "php",
+    "license": "Saboor-Hamedi",
+    "autoload": {
+        "psr-4": {
+            "Beginners\\": "App/"
+        }
+    },
+    "require": {}
+}
