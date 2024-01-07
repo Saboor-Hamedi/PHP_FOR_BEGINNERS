@@ -1,5 +1,5 @@
 <?php
-require_once  '../App/functions/func.php';
+require_once  '../App/functions/bootstrap.php';
 $url  = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 // routes associative array
