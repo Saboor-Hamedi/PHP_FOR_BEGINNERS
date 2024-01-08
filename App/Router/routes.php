@@ -2,10 +2,6 @@
 require_once  '../App/functions/bootstrap.php';
 $routes = require_once 'router.php';
 
-
-// routes associative array
-
-
 // Route funciton 
 function routeToControl($url, $routes)
 {

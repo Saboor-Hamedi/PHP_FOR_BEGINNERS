@@ -16,6 +16,7 @@
         <a href="/note?id=<?php echo $note['id']; ?>" class="text-blue-500 hover:underline"><?php echo $note['body'] ?></a>
       </li>
     <?php endforeach; ?>
+    <a href="/note/create" class="text-blue-500 hover:underline">Create Note</a>
   </div>
 </main>
 

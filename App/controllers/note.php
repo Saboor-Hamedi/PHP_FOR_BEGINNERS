@@ -13,6 +13,6 @@ $note = $db->query("SELECT * FROM notes WHERE  id = :id", [
 ])->findOrFail();
 
 // magic numbers, on func.php
-authorized($note['id'] === $currentUserId);
+authorized($note['user_id'] === $currentUserId);
 
 require_once 'views/note.view.php';
