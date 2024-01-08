@@ -1,4 +1,7 @@
 <?php
+
+use Beginners\functions\Response;
+
 function dd($value)
 {
   echo '<pre>';
@@ -9,4 +12,11 @@ function dd($value)
 function urlIs($value)
 {
   return $_SERVER['REQUEST_URI'] === $value;
+}
+
+function authorized($condition, $status = Response::FORBIDDEN)
+{
+  if (!$condition) {
+    abort($status);
+  }
 }

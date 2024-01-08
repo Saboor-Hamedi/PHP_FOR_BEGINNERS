@@ -8,7 +8,7 @@ require_once __DIR__ . '/../functions/bootstrap.php';
 
 $db = new Database($config['database']);
 $query = "SELECT * FROM notes";
-$results = $db->query($query)->fetchAll();
+$results = $db->query($query)->get();
 
 
 require_once 'views/notes.view.php';
