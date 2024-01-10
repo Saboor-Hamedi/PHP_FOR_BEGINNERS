@@ -2,6 +2,7 @@
 
 use Beginners\functions\Response;
 
+// dd die and dump
 function dd($value)
 {
   echo '<pre>';
@@ -9,16 +10,28 @@ function dd($value)
   echo '</pre>';
   die();
 }
-// active lists on nav
+// urlIs, active list on the nav
 function urlIs($value)
 {
   return $_SERVER['REQUEST_URI'] === $value;
 }
+// check if the post_id is not belongs to the current logged in user
 
-// check if the user_id matches the post id
 function authorized($condition, $status = Response::FORBIDDEN)
 {
   if (!$condition) {
     abort($status);
   }
+}
+// make base path 
+function base_path($path)
+{
+  return MAIN_PATH . $path;
+}
+// view on controllers, this view works for both view, and footer view
+// e.g, public/views/show.view.php
+function views($path, $attribute = [])
+{
+  extract($attribute);
+  require base_path('public/views/')  . $path;
 }

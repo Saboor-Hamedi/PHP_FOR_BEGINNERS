@@ -1,10 +1,3 @@
-<?php $config = require_once BASE_PATH . '/App/functions/config.php' ?>
-<?php
-
-use Beginners\Database\Database;
-
-?>
-
 <?php require_once 'partials/head.php'; ?>
 <?php require_once 'partials/nav.php'; ?>
 <?php require_once 'partials/banner.php'; ?>

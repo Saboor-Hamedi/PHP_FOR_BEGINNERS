@@ -1,7 +1,5 @@
 <?php
-require_once  '../App/functions/bootstrap.php';
 $routes = require_once 'router.php';
-
 // Route funciton 
 function routeToControl($url, $routes)
 {
