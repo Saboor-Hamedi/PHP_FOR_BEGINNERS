@@ -1,9 +1,18 @@
 <?php
-return [
-  '/' => '../App/controllers/index.php',
-  '/notes' => '../App/controllers/notes/index.php',
-  '/note' => '../App/controllers/notes/show.php',
-  '/note/create' => '../App/controllers/notes/create.php',
-  '/about' => '../App/controllers/about.php',
-  '/contact' => '../App/controllers/contact.php',
-];
+
+use Beginners\Router\Routers;
+
+$router = new Routers();
+
+$router->get('/index', 'controllers/index.php');
+$router->get('/about', 'controllers/about.php');
+$router->get('/contact', 'controllers/contact.php');
+// controllers 
+$router->get('/', 'controllers/index.php');
+$router->get('/notes', 'controllers/notes/index.php');
+$router->get('/note', 'controllers/notes/show.php');
+$router->delete('/note', 'controllers/notes/destroy.php');
+$router->get('/note/create', 'controllers/notes/create.php');
+$router->post('/notes', 'controllers/notes/store.php');
+// 
+//start from store 

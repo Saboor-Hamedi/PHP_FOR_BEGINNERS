@@ -1,5 +1,5 @@
 <?php
-
+// this controller is responsible for showing all data
 use Beginners\Database\Database;
 
 $config = require_once base_path('App/functions/config.php');

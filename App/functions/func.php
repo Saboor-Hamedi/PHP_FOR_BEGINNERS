@@ -16,7 +16,12 @@ function urlIs($value)
   return $_SERVER['REQUEST_URI'] === $value;
 }
 // check if the post_id is not belongs to the current logged in user
-
+function abort($code = 404)
+{
+  http_response_code(404);
+  require_once "views/{$code}.php";
+  die();
+}
 function authorized($condition, $status = Response::FORBIDDEN)
 {
   if (!$condition) {

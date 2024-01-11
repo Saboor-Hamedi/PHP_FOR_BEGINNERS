@@ -5,7 +5,7 @@
 <main>
   <!-- COMPONENT CODE -->
   <div class="container mx-auto my-4 px-4 lg:px-20">
-    <form method="POST">
+    <form method="POST" action="/notes">
       <div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
         <div class="my-4">
           <textarea id="body" name="body" class="w-full h-32 bg-gray-100 text-gray-900" placeholder="Type what is in you mind..."><?php echo htmlspecialchars($_POST['body'] ?? ''); ?></textarea>
